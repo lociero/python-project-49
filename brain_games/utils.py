@@ -22,3 +22,10 @@ def run_game(description, generate_data, user_name):
             print(f"Let's try again, {user_name}!")
             return
     print(f'Congratulations, {user_name}!')
+
+
+def get_greatest_common_divisor(num_one: int, num_two: int) -> int:
+    min_number = min(num_one, num_two)
+    for divisor in range(min_number, 0, -1):
+        if num_one % divisor == 0 and num_two % divisor == 0:
+            return divisor
