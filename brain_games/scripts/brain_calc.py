@@ -1,4 +1,4 @@
-from brain_games.games.brain_even import generate_game_data, GAME_DESCRIPTION
+from brain_games.games.brain_calc import generate_game_data, GAME_DESCRIPTION
 from brain_games.cli import welcome_user
 from brain_games.utils import run_game
 
