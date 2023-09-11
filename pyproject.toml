@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "python brain games package"
 authors = ["Dmitriy Frolov <omgoole@ya.ru>"]
 readme = "README.md"
+repository = "https://github.com/lociero/python-project-49"
 packages = [
   { include = "brain_games" },
 ]
