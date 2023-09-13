@@ -1,5 +1,6 @@
 from random import randint
 from brain_games.utils import get_greatest_common_divisor
+from brain_games.engine import run_game
 
 GAME_DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
@@ -12,3 +13,7 @@ def generate_game_data(get_random_int=randint) -> tuple[str, str]:
     answer = get_greatest_common_divisor(number_one, number_two)
 
     return question, str(answer)
+
+
+def brain_gcd():
+    return run_game(GAME_DESCRIPTION, generate_game_data)

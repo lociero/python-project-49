@@ -1,11 +1,8 @@
-from brain_games.games.brain_prime import generate_game_data, DESCRIPTION
-from brain_games.cli import welcome_user
-from brain_games.engine import run_game
+from brain_games.games.brain_prime import brain_prime
 
 
 def main():
-    user_name = welcome_user()
-    run_game(DESCRIPTION, generate_game_data, user_name)
+    brain_prime()
 
 
 if __name__ == '__main__':

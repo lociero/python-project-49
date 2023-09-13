@@ -1,5 +1,5 @@
 from random import randint, choice
-
+from brain_games.engine import run_game
 
 GAME_DESCRIPTION = 'What is the result of the expression?'
 
@@ -23,3 +23,7 @@ def generate_game_data(get_random_int=randint) -> tuple[str, str]:
             answer = ''
 
     return question, str(answer)
+
+
+def brain_calc():
+    return run_game(GAME_DESCRIPTION, generate_game_data)

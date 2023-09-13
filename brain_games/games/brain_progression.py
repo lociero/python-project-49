@@ -1,4 +1,5 @@
 from random import randint
+from brain_games.engine import run_game
 
 GAME_DESCRIPTION = 'What number is missing in the progression?'
 
@@ -19,3 +20,7 @@ def generate_game_data(get_random_int=randint) -> tuple[str, str]:
     question = ' '.join(progression)
 
     return question, answer
+
+
+def brain_progression():
+    return run_game(GAME_DESCRIPTION, generate_game_data)

@@ -1,7 +1,9 @@
 import prompt
 
 
-def run_game(description, generate_data, user_name):
+def run_game(description, generate_data):
+    user_name = prompt.string('May I have your name? ')
+    print(f'Hello, {user_name}!')
     print(description)
     game_counter = 0
     while game_counter < 3:
